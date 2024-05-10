@@ -1,0 +1,29 @@
+controller_list:
+  - name: fake_full_robot_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - tower_prismatic
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+  - name: fake_doosan_only_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+  - name: fake_vention_only_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - tower_prismatic
+initial:  # Define initial robot poses per group
+  - group: full_robot
+    pose: home
+  - group: vention_only
+    pose: vention_end

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dootion_description
+    relative_path: urdf/doosan_lift.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/h2017.srdf
+  CONFIG:
+    author_name: Jared Rosenbaum
+    author_email: jaredsr2@utexas.edu
+    generated_timestamp: 1715030322
