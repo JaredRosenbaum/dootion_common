@@ -1,5 +1,6 @@
+
 controller_list:
- - name: dootion_joint_trajectory_controller
+ - name: dsr_joint_trajectory_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true
